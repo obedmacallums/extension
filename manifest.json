@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Alerta con Teclas",
+    "version": "1.0",
+    "description": "Muestra un cuadro de diálogo de alerta con una combinación de teclas.",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "commands"
+    ],
+    "commands": {
+        "show-alert": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            },
+            "description": "Muestra un cuadro de diálogo de alerta"
+        }
+    }
+}
